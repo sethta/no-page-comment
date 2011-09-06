@@ -1,7 +1,7 @@
 === No Page Comment ===
 
 Contributors: Seth Alling
-Tags: admin, comments, javascript, pages, settings, tools, trackbacks
+Tags: admin, comments, javascript, page, pages, plugin, settings, tools, trackbacks
 Requires at least: 3.1
 Tested up to: 3.2.1
 Stable tag: 0.1
