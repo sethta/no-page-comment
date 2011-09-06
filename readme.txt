@@ -1,10 +1,10 @@
 === No Page Comment ===
 
 Contributors: Seth Alling
-Tags: tools, comments, trackbacks, settings, 
+Tags: admin, comments, javascript, pages, settings, tools, trackbacks
 Requires at least: 3.1
 Tested up to: 3.2.1
-Stable tag: 0.3
+Stable tag: 0.1
 
 Disable comments by default on new pages, while still giving you the ability to individually set them on a page or post basis.
 
@@ -28,11 +28,7 @@ Click 'FAQs Settings' in the settings panel:
 * Disable comments on pages
 * Disable trackbacks on pages
 
-Note: These settings set the default when creating a new page. Once a new page has been created, comments can be enabled by modifying the Discussion settings for that page. 
-
-= Requirements =
-
-* WordPress 3.1 or above
+Note: These settings set the default when creating a new page. Once a new page has been created, comments can be enabled by modifying the Discussion settings for that page.
 
 == Frequently Asked Questions ==
 
@@ -50,5 +46,5 @@ First, you must make sure you can see the Discussion admin box. Enable this by c
 
 == Changelog ==
 
-= 1.0 =
+= 0.1 =
 * NEW: Initial release.

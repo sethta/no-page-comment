@@ -3,7 +3,7 @@
 Plugin Name: No Page Comment
 Plugin URI: http://sethalling.com/plugins/no-page-comment
 Description: A plugin that uses javascript to disable comments by default on a page, but leave them enabled on posts, while still giving you the ability to individually set them on a page or post basis. 
-Version: 0.3
+Version: 0.1
 Author: Seth Alling
 Author URI: http://sethalling.com/
 
