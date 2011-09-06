@@ -12,7 +12,9 @@ Disable comments by default on new pages, while still giving you the ability to 
 
 By default, WordPress gives you two options. You can either disable comments and trackbacks by default for all pages and posts, or you can have them active by default. Unfortunately, there is no specific WordPress setting that allows comments and trackbacks to be active by default for posts, while disabling them on pages.
 
-There have been workarounds created by disabling comments sitewide on all pages and/or posts, but what if you may actually want to have comments on a page or two. The difference between this plugin and others is that it will automatically uncheck to discussion settings boxes for you when creating a new page, while still giving you the flexibility to open comments up specifically on individual pages.
+There have been workarounds created by disabling comments site-wide on all pages and/or posts, but what if you may actually want to have comments on a page or two. The difference between this plugin and others is that it will automatically uncheck to discussion settings boxes for you when creating a new page, while still giving you the flexibility to open comments up specifically on individual pages.
+
+[Official No Page Comment Plugin Page](http://sethalling.com/plugins/no-page-comment "No Page Comment WordPress Plugin")
 
 == Installation ==
 
