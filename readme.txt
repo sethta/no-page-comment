@@ -1,6 +1,7 @@
 === No Page Comment ===
 
-Contributors: Seth Alling
+Contributors: sethta
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WWP2EDSCAJR4
 Tags: admin, comments, javascript, page, pages, plugin, settings, tools, trackbacks
 Requires at least: 3.1
 Tested up to: 3.2.1
@@ -45,6 +46,10 @@ This is most likely due to a setting in WordPress. Go to the Discussion settings
 = How do I modify the comment settings on an individual post or page? =
 
 First, you must make sure you can see the Discussion admin box. Enable this by clicking on the 'Screen Options' tab at the top right and then checking the discussion checkbox. Below the post/page editor, there will be a new admin box allowing you to specifically enable or disable comments and trackbacks for that page or post.
+
+= What are your plans for the future? =
+
+I am hoping to add in custom post type support. Please [donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WWP2EDSCAJR4 "Donate to Seth Alling for the No Page Comment Plugin") to continue development.
 
 == Changelog ==
 
