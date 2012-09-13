@@ -4,7 +4,7 @@ Contributors: sethta
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WWP2EDSCAJR4
 Tags: admin, comments, custom post type, javascript, page, pages, post, posts, plugin, settings, tools, trackbacks
 Requires at least: 3.1
-Tested up to: 3.3.1
+Tested up to: 3.4.2
 Stable tag: 0.2
 
 Disable comments by default on new pages and custom post types, while still giving you the ability to individually set them on a page or post basis.
