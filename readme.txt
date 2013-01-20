@@ -51,7 +51,7 @@ This is most likely due to a setting in WordPress. Go to the 'Discussion' settin
 
 = Why can't I enable comments of custom post type: "X" =
 
-Depending on your theme or plugin that created custom post type "X", that pot type may not have comments set up. If this is the case, this plugin cannot help you and you will have to talk to that theme/plugin author.
+Depending on your theme or plugin that created custom post type "X", that post type may not have comments set up. If this is the case, this plugin cannot help you and you will have to talk to that theme/plugin author.
 
 = How do I modify the comment settings on an individual post or page? =
 
