@@ -7,7 +7,7 @@ Version: 0.3
 Author: Seth Alling
 Author URI: http://sethalling.com/
 
-	Plugin: Copyright (c) 2011 Seth Alling
+	Plugin: Copyright (c) 2011-2013 Seth Alling
 
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License
