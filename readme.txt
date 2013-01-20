@@ -81,7 +81,7 @@ Of course, although *it is highly recommended that you backup your blog's databa
 == Upgrade Notice ==
 
 = 0.3 =
-ability to enable/disable all comments or trackbacks on any specific custom post type. All previous No Page Comment settings will remain intact with upgrade.
+Adds the ability to enable/disable all comments or trackbacks on any specific custom post type. All previous No Page Comment settings will remain intact with upgrade.
 
 = 0.2 =
 Adds the ability to disable comments on posts, pages, and custom post types. All previous No Page Comment settings will remain intact with upgrade.
