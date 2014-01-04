@@ -2,9 +2,9 @@
 
 Contributors: sethta
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WWP2EDSCAJR4
-Tags: admin, comments, custom post type, javascript, page, pages, post, posts, plugin, settings, tools, trackbacks
+Tags: admin, comments, custom post type, page, pages, post, posts, attachment, attachments, media, plugin, settings, tools, trackbacks
 Requires at least: 3.1
-Tested up to: 3.5
+Tested up to: 3.8
 Stable tag: trunk
 
 Disable comments by default on new pages and custom post types, while still giving you the ability to individually set them on a page or post basis.
@@ -13,9 +13,9 @@ Disable comments by default on new pages and custom post types, while still givi
 
 By default, WordPress gives you two options. You can either disable comments and trackbacks by default for all pages and posts, or you can have them active by default. Unfortunately, there is no specific WordPress setting that allows comments and trackbacks to be active by default for posts, while disabling them on pages or any other post type.
 
-There have been workarounds created by disabling comments site-wide on all pages and/or posts, but what if you actually want to have comments on a page or two? The difference between this plugin and others is that it will automatically uncheck to discussion settings boxes for you when creating a new page, while still giving you the flexibility to open comments up specifically on individual pages and post types.
+Workarounds exist by disabling comments site-wide on all pages and/or posts, but what if you actually want to have comments on a page or two? The difference between this plugin and others is that it will automatically uncheck to discussion settings boxes for you when creating a new page, while still giving you the flexibility to open comments up specifically on individual pages and post types.
 
-Also, if you are looking for a quick way to disable all comments or pingbacks for a specific custom post type, that feature has now been built into the plugin. It directly interacts with your database to modify the status, so it is highly recommended that you backup your database first. There shouldn't be any issues with this feature, but it's always good to play it safe.
+Also, this plugin provides a way to quickly disable all comments or pingbacks for a specific custom post type. It directly interacts with your database to modify the status, so it is highly recommended that you backup your database first. There shouldn't be any issues using this feature, but it's always good to play it safe.
 
 [Official No Page Comment Plugin Page](http://sethalling.com/plugins/wordpress/no-page-comment "No Page Comment WordPress Plugin")
 
@@ -30,7 +30,7 @@ Also, if you are looking for a quick way to disable all comments or pingbacks fo
 
 = Settings Page =
 
-Click 'No Page Comment' in the settings panel. A screen will display showing the following settings for posts, pages, and any other custom post type installed on your blog:
+Click 'No Page Comment' in the settings panel. A screen will display showing the following settings for posts, pages, attachments and any other custom post type installed on your blog:
 
 * Disable comments
 * Disable trackbacks
@@ -43,15 +43,17 @@ Also, there is now the option to globally enable/disable comments or pingbacks o
 
 = Why aren't comments and trackbacks being disabled? =
 
-Javascript probably isn't active on your browser. Enable javascript for the plugin to work correctly.
+There are two possible issues for this. The first is that you are using a version of WordPress earlier than 3.4 and have javascript disabled as it relies on jQuery. WordPress version of 3.4 and later do not require javascript.
 
-= Why are comments disabled in posts as well? =
-
-This is most likely due to a setting in WordPress. Go to the 'Discussion' settings page and make sure that comments are enabled. This is required for the plugin to work properly.
+The second possible issue is that you are duplicating a post or page. This plugin only works when you are on a new post/page screen, while plugins that duplicate posts, duplicate the post first and then take you to an edit screen. Unfortunately, there is no way to get around this issue, so if you plan on using a duplication plugin, then you will just have to remember to disable your comments.
 
 = Why can't I enable comments of custom post type: "X" =
 
-Depending on your theme or plugin that created custom post type "X", that post type may not have comments set up. If this is the case, this plugin cannot help you and you will have to talk to that theme/plugin author.
+Depending on your theme or plugin that created custom post type "X", that post type may not have comments set up. If this is the case, this plugin cannot help you and you will have to talk to your theme/plugin author.
+
+= Why is "Comments are closed" or some other text displayed after I disable my comments? =
+
+Many themes will include text to show that comments are not enabled on a post. To remove it, you would need to talk to your theme author.
 
 = How do I modify the comment settings on an individual post or page? =
 
@@ -59,13 +61,22 @@ First, you must make sure you can see the Discussion admin box. Enable this by c
 
 = I want to quickly disable all trackbacks throughout my blog posts. Is this possible? =
 
-Of course, although *it is highly recommended that you backup your blog's database prior to completing this step*. Go to the 'No Page Comment' settings page and scroll to the bottom of the page. There is an area that will allow you to either enable or disble both comments and trackbacks for any post type you have installed on your blog.
+Of course, although *it is highly recommended that you backup your blog's database prior to completing this step*. Go to the 'No Page Comment' settings page and scroll to the bottom of the page. There is an area that will allow you to either enable or disable both comments and trackbacks for any post type you have installed on your blog.
 
 == Screenshots ==
 
-1. The Settings page on a fresh WordPress 3.5 installation
+1. The Settings page on a fresh WordPress 3.8 installation
 
 == Changelog ==
+
+= 1.0 =
+* UPDATE: Rewrite plugin to decrease code bloat
+* UPDATE: Remove javascript dependency by default for WordPress versions 3.4 and up
+* UPDATE: Fix settings so they are not dependent on WordPress's comment settings
+* UPDATE: Fix settings page so it displays responsively
+* NEW: Add support for attachments
+* NEW: Update discussion options page to include link to No Page Comment settings page
+* NEW: Prepare plugin for translation into other languages
 
 = 0.3 =
 * NEW: Add ability to enable/disable all comments or trackbacks on any specific custom post type. It is highly recommended that you backup your blog's database prior to doing this.
@@ -79,6 +90,9 @@ Of course, although *it is highly recommended that you backup your blog's databa
 * NEW: Initial release.
 
 == Upgrade Notice ==
+
+= 1.0 =
+Improves plugin performance and adds ability to enable/disable all comments or trackbacks on attachment pages. All previous No Page Comment settings will remain intact with upgrade.
 
 = 0.3 =
 Adds the ability to enable/disable all comments or trackbacks on any specific custom post type. All previous No Page Comment settings will remain intact with upgrade.

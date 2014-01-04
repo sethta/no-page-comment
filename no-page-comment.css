@@ -1,0 +1,73 @@
+.inside > div {
+	padding: 10px 0 0;
+	float: left;
+	width: 100%;
+}
+.inside .post-type {
+	width: 20%;
+	min-width: 120px;
+	margin-bottom: 10px;
+	float: left;
+}
+.inner {
+	float: left;
+	width: 80%;
+}
+.inner > div {
+	float: left;
+	width: 50%;
+}
+.inner label {
+	padding-right: 50px;
+	margin-bottom: 10px;
+	float:left;
+}
+.buttons input {
+	margin:0 1% 5px !important;
+	float:left;
+	width: 47%;
+	min-width: 150px;
+}
+
+@media (max-width: 1200px) {
+    .inside .post-type {
+    	width: 30%;
+    }
+	.inner {
+		width: 70%;
+	}
+    .buttons .post-type {
+    	min-width: 200px;
+    }
+	.buttons .inner {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1152px) {
+	.buttons input {
+		margin:0 1% 5px !important;
+		width: 97%;
+	}
+}
+
+@media (max-width: 600px) {
+	.buttons input {
+		margin:0 1% 5px !important;
+		width: 97%;
+	}
+}
+
+@media (max-width: 380px) {
+    .inside .post-type {
+    	min-width: 200px;
+    }
+	.inner > div {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	.buttons input {
+		margin:0 0 5px !important;
+		width: 100%;
+	}
+}
