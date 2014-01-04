@@ -19,6 +19,10 @@ Also, this plugin provides a way to quickly disable all comments or pingbacks fo
 
 [Official No Page Comment Plugin Page](http://sethalling.com/plugins/wordpress/no-page-comment "No Page Comment WordPress Plugin")
 
+[View No Page Comment Development on Github](https://github.com/sethta/no-page-comment "No Page Comment Development on Github")
+
+[Please Report any Issues about No Page Comment on Github](https://github.com/sethta/no-page-comment/issues "Report an Issue about No Page Comment on Github")
+
 [Donate to Support No Page Comment Development](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WWP2EDSCAJR4 "Donate to support the No Page Comment Plugin development")
 
 == Installation ==
@@ -62,6 +66,10 @@ First, you must make sure you can see the Discussion admin box. Enable this by c
 = I want to quickly disable all trackbacks throughout my blog posts. Is this possible? =
 
 Of course, although *it is highly recommended that you backup your blog's database prior to completing this step*. Go to the 'No Page Comment' settings page and scroll to the bottom of the page. There is an area that will allow you to either enable or disable both comments and trackbacks for any post type you have installed on your blog.
+
+= How can I help support No Page Comment? =
+
+[Donations](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WWP2EDSCAJR4 "Donate to support the No Page Comment Plugin development") are always accepted, but I am also looking for help from others who want to make this plugin better. Please [fork the plugin on Github](https://github.com/sethta/no-page-comment "Fork No Page Comment on Github") and feel free to [report any issues](https://github.com/sethta/no-page-comment/issues "Report an Issue about No Page Comment on Github").
 
 == Screenshots ==
 

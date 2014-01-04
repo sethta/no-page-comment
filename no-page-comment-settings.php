@@ -112,6 +112,8 @@ if ( isset($_POST['update_sta_npc_plugin_settings']) ) {
 							<ul>
 								<li style="padding:5px 0;"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WWP2EDSCAJR4" title="<?php _e('Donate to support the No Page Comment plugin development', $this->plugin_domain ); ?>"><?php _e('Donate', $this->plugin_domain ); ?></a></li>
 								<li style="padding:5px 0;"><a href="http://wordpress.org/support/view/plugin-reviews/no-page-comment#postform" title="<?php _e('Write a Review about No Page Comment', $this->plugin_domain ); ?>"><?php _e('Write a Review', $this->plugin_domain ); ?></a></li>
+								<li style="padding:5px 0;"><a href="https://github.com/sethta/no-page-comment" title="<?php _e('Fork No Page Comment on Github', $this->plugin_domain ); ?>"><?php _e('Fork No Page Comment', $this->plugin_domain ); ?></a></li>
+								<li style="padding:5px 0;"><a href="https://github.com/sethta/no-page-comment/issues" title="<?php _e('Report an Issue on Github', $this->plugin_domain ); ?>"><?php _e('Report an Issue about No Page Comment', $this->plugin_domain ); ?></a></li>
 							</ul>
 						</div>
 					</div>
