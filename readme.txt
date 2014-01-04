@@ -77,6 +77,9 @@ Of course, although *it is highly recommended that you backup your blog's databa
 
 == Changelog ==
 
+= 1.0.2 =
+* FIX: Stop plugin CSS from loading on other admin pages.
+
 = 1.0.1 =
 * FIX: Added missing files from failed SVN commit.
 

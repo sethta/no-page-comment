@@ -3,7 +3,7 @@
 Plugin Name: No Page Comment
 Plugin URI: http://sethalling.com/plugins/no-page-comment
 Description: A plugin that uses javascript to disable comments by default on posts, pages and/or custom post types but leave them enabled on others, while still giving you the ability to individually set them on a page or post basis.
-Version: 1.0.1
+Version: 1.0.2
 Author: Seth Alling
 Author URI: http://sethalling.com/
 
@@ -113,9 +113,11 @@ if ( ! function_exists( 'sta_npc_load' ) ) {
 				}
 
 				// Add stylesheet to admin page
-			    function sta_npc_admin_styles() {
-			        wp_register_style( 'sta_npc', $this->plugin_dir . '/no-page-comment.css', false, $this->plugin_ver );
-			        wp_enqueue_style( 'sta_npc' );
+			    function sta_npc_admin_styles( $hook ) {
+					if ( $hook == 'settings_page_no-page-comment' ) {
+						wp_register_style( 'sta_npc', $this->plugin_dir . '/no-page-comment.css', false, $this->plugin_ver );
+						wp_enqueue_style( 'sta_npc' );
+					}
 			    }
 
 				// Add settings link to plugins page
@@ -149,6 +151,7 @@ if ( ! function_exists( 'sta_npc_load' ) ) {
 							jQuery('label[for="default_comment_status"]').prev('br').remove();
 							jQuery('label[for="default_comment_status"]').next('br').remove();
 							jQuery('label[for="default_comment_status"]').next('p').html('<?php echo $settings_link; ?>');
+							jQuery('label[for="default_comment_status"]').next('small').html('<?php echo $settings_link; ?>');
 							jQuery('label[for="default_comment_status"]').remove();
 						});
 						</script>
