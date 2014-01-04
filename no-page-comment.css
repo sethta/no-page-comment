@@ -1,28 +1,28 @@
-.inside > div {
+.npc-settings .inside > div {
 	padding: 10px 0 0;
 	float: left;
 	width: 100%;
 }
-.inside .post-type {
+.npc-settings .inside .post-type {
 	width: 20%;
 	min-width: 120px;
 	margin-bottom: 10px;
 	float: left;
 }
-.inner {
+.npc-settings .inner {
 	float: left;
 	width: 80%;
 }
-.inner > div {
+.npc-settings .inner > div {
 	float: left;
 	width: 50%;
 }
-.inner label {
+.npc-settings .inner label {
 	padding-right: 50px;
 	margin-bottom: 10px;
 	float:left;
 }
-.buttons input {
+.npc-settings .buttons input {
 	margin:0 1% 5px !important;
 	float:left;
 	width: 47%;
@@ -30,43 +30,43 @@
 }
 
 @media (max-width: 1200px) {
-    .inside .post-type {
+    .npc-settings .inside .post-type {
     	width: 30%;
     }
-	.inner {
+	.npc-settings .inner {
 		width: 70%;
 	}
     .buttons .post-type {
     	min-width: 200px;
     }
-	.buttons .inner {
+	.npc-settings .buttons .inner {
 		width: 100%;
 	}
 }
 
 @media (max-width: 1152px) {
-	.buttons input {
+	.npc-settings .buttons input {
 		margin:0 1% 5px !important;
 		width: 97%;
 	}
 }
 
 @media (max-width: 600px) {
-	.buttons input {
+	.npc-settings .buttons input {
 		margin:0 1% 5px !important;
 		width: 97%;
 	}
 }
 
 @media (max-width: 380px) {
-    .inside .post-type {
+    .npc-settings .inside .post-type {
     	min-width: 200px;
     }
-	.inner > div {
+	.npc-settings .inner > div {
 		width: 100%;
 		margin-bottom: 5px;
 	}
-	.buttons input {
+	.npc-settings .buttons input {
 		margin:0 0 5px !important;
 		width: 100%;
 	}

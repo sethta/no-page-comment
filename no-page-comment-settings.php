@@ -1,5 +1,5 @@
 
-<form method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>" class="wrap">
+<form method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>" class="wrap npc-settings">
 
 <?php
 // Prints out the admin settings page
