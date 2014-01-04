@@ -77,6 +77,9 @@ Of course, although *it is highly recommended that you backup your blog's databa
 
 == Changelog ==
 
+= 1.0.1 =
+* FIX: Added missing files from failed SVN commit.
+
 = 1.0 =
 * UPDATE: Rewrite plugin to decrease code bloat
 * UPDATE: Remove javascript dependency by default for WordPress versions 3.4 and up
