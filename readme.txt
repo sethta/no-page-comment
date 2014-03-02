@@ -2,7 +2,7 @@
 
 Contributors: sethta
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WWP2EDSCAJR4
-Tags: admin, comments, custom post type, page, pages, post, posts, attachment, attachments, media, plugin, settings, tools, trackbacks
+Tags: admin, comments, custom post type, discussion, pages, posts, attachment, attachments, media, settings, tools, trackbacks
 Requires at least: 3.1
 Tested up to: 3.8
 Stable tag: trunk
@@ -69,7 +69,7 @@ Of course, although *it is highly recommended that you backup your blog's databa
 
 = How can I help support No Page Comment? =
 
-[Donations](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WWP2EDSCAJR4 "Donate to support the No Page Comment Plugin development") are always accepted, but I am also looking for help from others who want to make this plugin better. Please [fork the plugin on Github](https://github.com/sethta/no-page-comment "Fork No Page Comment on Github") and feel free to [report any issues](https://github.com/sethta/no-page-comment/issues "Report an Issue about No Page Comment on Github").
+[Donations](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WWP2EDSCAJR4 "Donate to support the No Page Comment Plugin development") are always accepted, but I am also looking for help from others who want to make this plugin better. Please [fork the plugin on Github](https://github.com/sethta/no-page-comment "Fork No Page Comment on Github") and feel free to [report any issues](https://github.com/sethta/no-page-comment/issues "Report an Issue about No Page Comment on Github"). Also, I am looking for people who are interested in translating No Page Comment into other languages. Please [contact me](http://sethalling.com/contact/ "Contact Seth Alling") me if you are interested.
 
 == Screenshots ==
 
@@ -77,11 +77,15 @@ Of course, although *it is highly recommended that you backup your blog's databa
 
 == Changelog ==
 
+= 1.0.3 =
+* UPDATE: Complete translation support.
+* NEW: Add .pot file for translation.
+
 = 1.0.2 =
 * FIX: Stop plugin CSS from loading on other admin pages.
 
 = 1.0.1 =
-* FIX: Added missing files from failed SVN commit.
+* FIX: Add missing files from failed SVN commit.
 
 = 1.0 =
 * UPDATE: Rewrite plugin to decrease code bloat

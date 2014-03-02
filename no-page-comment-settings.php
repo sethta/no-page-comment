@@ -50,9 +50,9 @@ if ( isset($_POST['update_sta_npc_plugin_settings']) ) {
 									<strong class="post-type"><?php echo $posttype->label; ?></strong>
 									<div class="inner">
 										<label for="sta_npc_disable_comments_<?php echo $posttype->name; ?>">
-											<input type="checkbox" id="sta_npc_disable_comments_<?php echo $posttype->name; ?>" name="sta_npc_disable_comments_<?php echo $posttype->name; ?>" value="true" <?php if ( $sta_npc_options['disable_comments_' . $posttype->name] == 'true' ) { _e('checked="checked"', $this->plugin_domain ); } ?>> <?php _e('Comments', $this->plugin_domain ); ?></label>
+											<input type="checkbox" id="sta_npc_disable_comments_<?php echo $posttype->name; ?>" name="sta_npc_disable_comments_<?php echo $posttype->name; ?>" value="true" <?php if ( $sta_npc_options['disable_comments_' . $posttype->name] == 'true' ) { echo 'checked="checked"'; } ?>> <?php _e('Comments', $this->plugin_domain ); ?></label>
 										<label for="sta_npc_disable_trackbacks_<?php echo $posttype->name; ?>">
-											<input type="checkbox" id="sta_npc_disable_trackbacks_<?php echo $posttype->name; ?>" name="sta_npc_disable_trackbacks_<?php echo $posttype->name; ?>" value="true" <?php if ( $sta_npc_options['disable_trackbacks_' . $posttype->name] == 'true' ) { _e('checked="checked"', $this->plugin_domain ); } ?>> <?php _e('Trackbacks', $this->plugin_domain ); ?></label>
+											<input type="checkbox" id="sta_npc_disable_trackbacks_<?php echo $posttype->name; ?>" name="sta_npc_disable_trackbacks_<?php echo $posttype->name; ?>" value="true" <?php if ( $sta_npc_options['disable_trackbacks_' . $posttype->name] == 'true' ) { echo 'checked="checked"'; } ?>> <?php _e('Trackbacks', $this->plugin_domain ); ?></label>
 									</div>
 								</div>
 								<br class="clear">
@@ -98,10 +98,10 @@ if ( isset($_POST['update_sta_npc_plugin_settings']) ) {
 				<div class="meta-box-sortables">
 
 					<div class="postbox">
-						<h3 style="cursor:default;"><span><?php _e('Other plugins by', $this->plugin_domain ); ?> <a href="http://sethalling.com/" title="<?php _e('Seth Alling', $this->plugin_domain ); ?>" style="font-size:15px;"><?php _e('Seth Alling', $this->plugin_domain ); ?></a>:</span></h3>
+						<h3 style="cursor:default;"><span><?php _e('Other plugins by', $this->plugin_domain ); ?> <a href="http://sethalling.com/" title="Seth Alling" style="font-size:15px;">Seth Alling</a>:</span></h3>
 						<div class="inside">
 							<ul>
-								<li style="padding:5px 0;"><a href="http://sethalling.com/plugins/wordpress/wp-faqs-pro" title="<?php _e('WP FAQs Pro', $this->plugin_domain ); ?>"><?php _e('WP FAQs Pro', $this->plugin_domain ); ?></a></li>
+								<li style="padding:5px 0;"><a href="http://sethalling.com/plugins/wordpress/wp-faqs-pro" title="WP FAQs Pro" target="_blank">WP FAQs Pro</a></li>
 							</ul>
 						</div>
 					</div>
@@ -110,10 +110,11 @@ if ( isset($_POST['update_sta_npc_plugin_settings']) ) {
 						<h3 style="cursor:default;"><span><?php _e('Support No Page Comment:', $this->plugin_domain ); ?></span></h3>
 						<div class="inside">
 							<ul>
-								<li style="padding:5px 0;"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WWP2EDSCAJR4" title="<?php _e('Donate to support the No Page Comment plugin development', $this->plugin_domain ); ?>"><?php _e('Donate', $this->plugin_domain ); ?></a></li>
-								<li style="padding:5px 0;"><a href="http://wordpress.org/support/view/plugin-reviews/no-page-comment#postform" title="<?php _e('Write a Review about No Page Comment', $this->plugin_domain ); ?>"><?php _e('Write a Review', $this->plugin_domain ); ?></a></li>
-								<li style="padding:5px 0;"><a href="https://github.com/sethta/no-page-comment" title="<?php _e('Fork No Page Comment on Github', $this->plugin_domain ); ?>"><?php _e('Fork No Page Comment', $this->plugin_domain ); ?></a></li>
-								<li style="padding:5px 0;"><a href="https://github.com/sethta/no-page-comment/issues" title="<?php _e('Report an Issue on Github', $this->plugin_domain ); ?>"><?php _e('Report an Issue about No Page Comment', $this->plugin_domain ); ?></a></li>
+								<li style="padding:5px 0;"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WWP2EDSCAJR4" title="<?php _e('Donate to support the No Page Comment plugin development', $this->plugin_domain ); ?>" target="_blank"><?php _e('Donate', $this->plugin_domain ); ?></a></li>
+								<li style="padding:5px 0;"><a href="http://wordpress.org/support/view/plugin-reviews/no-page-comment#postform" title="<?php _e('Write a Review about No Page Comment', $this->plugin_domain ); ?>" target="_blank"><?php _e('Write a Review', $this->plugin_domain ); ?></a></li>
+								<li style="padding:5px 0;"><a href="https://github.com/sethta/no-page-comment" title="<?php _e('Fork No Page Comment on Github', $this->plugin_domain ); ?>" target="_blank"><?php _e('Fork No Page Comment', $this->plugin_domain ); ?></a></li>
+								<li style="padding:5px 0;"><a href="https://github.com/sethta/no-page-comment/issues" title="<?php _e('Report an Issue on Github', $this->plugin_domain ); ?>" target="_blank"><?php _e('Report an Issue about No Page Comment', $this->plugin_domain ); ?></a></li>
+								<li style="padding:5px 0;"><a href="http://sethalling.com/contact/" title="<?php _e('Help Translate No Page Comment', $this->plugin_domain ); ?>" target="_blank"><?php _e('Offer to Translate No Page Comment', $this->plugin_domain ); ?></a></li>
 							</ul>
 						</div>
 					</div>
