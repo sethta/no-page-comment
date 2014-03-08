@@ -104,6 +104,10 @@ msgstr ""
 msgid "Offer to Translate No Page Comment"
 msgstr ""
 
+#: no-page-comment-settings.php:123
+msgid "Translation Thanks"
+msgstr ""
+
 #: no-page-comment.php:133
 msgid "Settings"
 msgstr ""

@@ -119,6 +119,16 @@ if ( isset($_POST['update_sta_npc_plugin_settings']) ) {
 						</div>
 					</div>
 
+					<div class="postbox">
+						<h3 style="cursor:default;"><span><?php _e('Translation Thanks:', $this->plugin_domain ); ?></span></h3>
+						<div class="inside">
+							<ul>
+								<li style="padding:5px 0;"><a href="http://www.webhostinghub.com/" title="Maria Ramos, WebHostingHub" target="_blank">Maria Ramos, WebHostingHub</a></li>
+								<li style="padding:5px 0;"><a href="http://firstsiteguide.com/" title="firstsiteguide.com" target="_blank">firstsiteguide.com</a></li>
+							</ul>
+						</div>
+					</div>
+
 				</div>
 			</div>
 

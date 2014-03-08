@@ -77,6 +77,10 @@ Of course, although *it is highly recommended that you backup your blog's databa
 
 == Changelog ==
 
+= 1.0.4 =
+* NEW: Add Spanish language support.
+* NEW: Add Serbian language support.
+
 = 1.0.3 =
 * UPDATE: Complete translation support.
 * NEW: Add .pot file for translation.
