@@ -73,9 +73,12 @@ Of course, although *it is highly recommended that you backup your blog's databa
 
 == Screenshots ==
 
-1. The Settings page on a fresh WordPress 3.8 installation
+1. The Settings page on a fresh WordPress 3.9 installation
 
 == Changelog ==
+
+= 1.0.5 =
+* FIX: Fix to make mu-plugin friendly. Thanks @swinggraphics.
 
 = 1.0.4 =
 * NEW: Add Spanish language support.
