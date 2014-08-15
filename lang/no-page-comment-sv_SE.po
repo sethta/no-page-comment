@@ -1,0 +1,135 @@
+# Copyright (C) 2014 No Page Comment
+# This file is distributed under the same license as the No Page Comment package.
+msgid ""
+msgstr ""
+"Project-Id-Version: No Page Comment 1.0.5\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/no-page-comment\n"
+"POT-Creation-Date: 2014-03-02 01:02:56+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-08-15 13:14+0100\n"
+"Last-Translator: Andréas Lundgren <adevade@gmail.com>\n"
+"Language-Team: 035media <info@035media.se>\n"
+"X-Generator: Poedit 1.6.7\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: sv_SE\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: no-page-comment-settings.php:31
+msgid "Settings Updated."
+msgstr "Inställningarna sparades."
+
+#: no-page-comment-settings.php:35 no-page-comment.php:152
+msgid "No Page Comment Settings"
+msgstr "Inställningar för No Page Comment"
+
+#: no-page-comment-settings.php:44
+msgid "Disable comments on new:"
+msgstr "Inaktivera kommentarer på nya:"
+
+#: no-page-comment-settings.php:53
+msgid "Comments"
+msgstr "Kommentarer"
+
+#: no-page-comment-settings.php:55
+msgid "Trackbacks"
+msgstr "Trackbacks"
+
+#: no-page-comment-settings.php:63
+msgid "Update Settings"
+msgstr "Uppdatera inställningar"
+
+#: no-page-comment-settings.php:70
+msgid "Modify all current:"
+msgstr "Redigera alla nuvarande:"
+
+#: no-page-comment-settings.php:79
+msgid "Disable All Comments"
+msgstr "Inaktivera alla kommentarer"
+
+#: no-page-comment-settings.php:80
+msgid "Enable All Comments"
+msgstr "Aktivera alla kommentarer"
+
+#: no-page-comment-settings.php:83
+msgid "Disable All Trackbacks"
+msgstr "Inaktivera alla trackbacks"
+
+#: no-page-comment-settings.php:84
+msgid "Enable All Trackbacks"
+msgstr "Aktivera alla trackbacks"
+
+#: no-page-comment-settings.php:101
+msgid "Other plugins by"
+msgstr "Andra tillägg av"
+
+#: no-page-comment-settings.php:110
+msgid "Support No Page Comment:"
+msgstr "Stöd No Page Comment"
+
+#: no-page-comment-settings.php:113
+msgid "Donate to support the No Page Comment plugin development"
+msgstr "Donera för att stödja utvecklingen av No Page Comment"
+
+#: no-page-comment-settings.php:113
+msgid "Donate"
+msgstr "Donera"
+
+#: no-page-comment-settings.php:114
+msgid "Write a Review about No Page Comment"
+msgstr "Skriv en recension om No Page Comment"
+
+#: no-page-comment-settings.php:114
+msgid "Write a Review"
+msgstr "Skriv en recension"
+
+#: no-page-comment-settings.php:115
+msgid "Fork No Page Comment on Github"
+msgstr "Fork No Page Comment på GitHub"
+
+#: no-page-comment-settings.php:115
+msgid "Fork No Page Comment"
+msgstr "Fork No Page Comment"
+
+#: no-page-comment-settings.php:116
+msgid "Report an Issue on Github"
+msgstr "Rapportera ett problem på GitHub"
+
+#: no-page-comment-settings.php:116
+msgid "Report an Issue about No Page Comment"
+msgstr "Rapportera ett problem med No Page Comment"
+
+#: no-page-comment-settings.php:117
+msgid "Help Translate No Page Comment"
+msgstr "Hjälp till att översätta No Page Comment"
+
+#: no-page-comment-settings.php:117
+msgid "Offer to Translate No Page Comment"
+msgstr "Översätt No Page Comment"
+
+#: no-page-comment-settings.php:123
+msgid "Translation Thanks:"
+msgstr "Översättningar av:"
+
+#: no-page-comment.php:133
+msgid "Settings"
+msgstr "Inställningar"
+
+#: no-page-comment.php:152
+msgid "Comment and trackback defaults controlled through"
+msgstr "Standardinställningar för kommentarer och trackbacks kontrolleras av"
+
+#. Plugin Name of the plugin/theme
+msgid "No Page Comment"
+msgstr "No Page Comment"
+
+#. Description of the plugin/theme
+msgid ""
+"A plugin that uses javascript to disable comments by default on posts, pages "
+"and/or custom post types but leave them enabled on others, while still "
+"giving you the ability to individually set them on a page or post basis."
+msgstr ""
+"Ett tillägg som använder JavaScript för att inaktivera kommentarer på "
+"inlägg, sidor och/eller egna inläggstyper men lämnar dem aktiverade på "
+"andra. "
