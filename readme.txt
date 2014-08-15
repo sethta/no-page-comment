@@ -4,7 +4,7 @@ Contributors: sethta
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WWP2EDSCAJR4
 Tags: admin, comments, custom post type, discussion, pages, posts, attachment, attachments, media, settings, tools, trackbacks
 Requires at least: 3.1
-Tested up to: 3.9
+Tested up to: 3.9.2
 Stable tag: trunk
 
 Disable comments by default on new pages and custom post types, while still giving you the ability to individually set them on a page or post basis.
@@ -76,6 +76,9 @@ Of course, although *it is highly recommended that you backup your blog's databa
 1. The Settings page on a fresh WordPress 3.9 installation
 
 == Changelog ==
+
+= 1.0.6 =
+* NEW: Add Swedish language support.
 
 = 1.0.5 =
 * FIX: Fix to make mu-plugin friendly. Thanks @swinggraphics.
