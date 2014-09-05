@@ -125,6 +125,8 @@ if ( isset($_POST['update_sta_npc_plugin_settings']) ) {
 							<ul>
 								<li style="padding:5px 0;"><a href="http://www.webhostinghub.com/" title="Maria Ramos, WebHostingHub" target="_blank">Maria Ramos, WebHostingHub</a></li>
 								<li style="padding:5px 0;"><a href="http://firstsiteguide.com/" title="firstsiteguide.com" target="_blank">firstsiteguide.com</a></li>
+								<li style="padding:5px 0;"><a href="http://adevade.com/" title="Andréas Lundgren" target="_blank">Andréas Lundgren</a></li>
+								<li style="padding:5px 0;"><a href="http://www.fravaco.be/" title="Fravaco" target="_blank">Fravaco</a></li>
 							</ul>
 						</div>
 					</div>

@@ -16,7 +16,7 @@ msgstr ""
 msgid "Settings Updated."
 msgstr ""
 
-#: no-page-comment-settings.php:35 no-page-comment.php:152
+#: no-page-comment-settings.php:35 no-page-comment.php:142 no-page-comment.php:152
 msgid "No Page Comment Settings"
 msgstr ""
 
@@ -116,7 +116,7 @@ msgstr ""
 msgid "Comment and trackback defaults controlled through"
 msgstr ""
 
-#. Plugin Name of the plugin/theme
+#. Plugin Name of the plugin/theme no-page-comment.php:142
 msgid "No Page Comment"
 msgstr ""
 
