@@ -1,8 +1,8 @@
-# Copyright (C) 2014 No Page Comment
+# Copyright (C) 2015 No Page Comment
 # This file is distributed under the same license as the No Page Comment package.
 msgid ""
 msgstr ""
-"Project-Id-Version: No Page Comment 1.0.3\n"
+"Project-Id-Version: No Page Comment 1.1\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/no-page-comment\n"
 "POT-Creation-Date: 2014-03-02 01:02:56+00:00\n"
 "MIME-Version: 1.0\n"
@@ -12,111 +12,127 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: no-page-comment-settings.php:31
+#: no-page-comment-settings.php:37
 msgid "Settings Updated."
 msgstr ""
 
-#: no-page-comment-settings.php:35 no-page-comment.php:142 no-page-comment.php:152
+#: no-page-comment-settings.php:41 no-page-comment.php:153 no-page-comment.php:163
 msgid "No Page Comment Settings"
 msgstr ""
 
-#: no-page-comment-settings.php:44
+#: no-page-comment-settings.php:50
 msgid "Disable comments on new:"
 msgstr ""
 
-#: no-page-comment-settings.php:53
+#: no-page-comment-settings.php:59
 msgid "Comments"
 msgstr ""
 
-#: no-page-comment-settings.php:55
+#: no-page-comment-settings.php:61
 msgid "Trackbacks"
 msgstr ""
 
-#: no-page-comment-settings.php:63
+#: no-page-comment-settings.php:69
 msgid "Update Settings"
 msgstr ""
 
-#: no-page-comment-settings.php:70
+#: no-page-comment-settings.php:76
 msgid "Modify all current:"
 msgstr ""
 
-#: no-page-comment-settings.php:79
+#: no-page-comment-settings.php:85
 msgid "Disable All Comments"
 msgstr ""
 
-#: no-page-comment-settings.php:80
+#: no-page-comment-settings.php:86
 msgid "Enable All Comments"
 msgstr ""
 
-#: no-page-comment-settings.php:83
+#: no-page-comment-settings.php:89
 msgid "Disable All Trackbacks"
 msgstr ""
 
-#: no-page-comment-settings.php:84
+#: no-page-comment-settings.php:90
 msgid "Enable All Trackbacks"
 msgstr ""
 
-#: no-page-comment-settings.php:101
+#: no-page-comment-settings.php:107
 msgid "Other plugins by"
 msgstr ""
 
-#: no-page-comment-settings.php:110
+#: no-page-comment-settings.php:116
 msgid "Support No Page Comment:"
 msgstr ""
 
-#: no-page-comment-settings.php:113
+#: no-page-comment-settings.php:119
 msgid "Donate to support the No Page Comment plugin development"
 msgstr ""
 
-#: no-page-comment-settings.php:113
+#: no-page-comment-settings.php:119
 msgid "Donate"
 msgstr ""
 
-#: no-page-comment-settings.php:114
+#: no-page-comment-settings.php:120
 msgid "Write a Review about No Page Comment"
 msgstr ""
 
-#: no-page-comment-settings.php:114
+#: no-page-comment-settings.php:120
 msgid "Write a Review"
 msgstr ""
 
-#: no-page-comment-settings.php:115
+#: no-page-comment-settings.php:121
 msgid "Fork No Page Comment on Github"
 msgstr ""
 
-#: no-page-comment-settings.php:115
+#: no-page-comment-settings.php:121
 msgid "Fork No Page Comment"
 msgstr ""
 
-#: no-page-comment-settings.php:116
+#: no-page-comment-settings.php:122
 msgid "Report an Issue on Github"
 msgstr ""
 
-#: no-page-comment-settings.php:116
+#: no-page-comment-settings.php:122
 msgid "Report an Issue about No Page Comment"
 msgstr ""
 
-#: no-page-comment-settings.php:117
+#: no-page-comment-settings.php:123
 msgid "Help Translate No Page Comment"
 msgstr ""
 
-#: no-page-comment-settings.php:117
+#: no-page-comment-settings.php:123
 msgid "Offer to Translate No Page Comment"
 msgstr ""
 
-#: no-page-comment-settings.php:123
+#: no-page-comment-settings.php:129
 msgid "Translation Thanks:"
 msgstr ""
 
-#: no-page-comment.php:133
+#: no-page-comment-settings.php:132
+msgid "Dutch and Italian:"
+msgstr ""
+
+#: no-page-comment-settings.php:133
+msgid "Serbian:"
+msgstr ""
+
+#: no-page-comment-settings.php:134
+msgid "Spanish:"
+msgstr ""
+
+#: no-page-comment-settings.php:135
+msgid "Swedish:"
+msgstr ""
+
+#: no-page-comment.php:144
 msgid "Settings"
 msgstr ""
 
-#: no-page-comment.php:152
+#: no-page-comment.php:163
 msgid "Comment and trackback defaults controlled through"
 msgstr ""
 
-#. Plugin Name of the plugin/theme no-page-comment.php:142
+#. Plugin Name of the plugin/theme no-page-comment.php:153
 msgid "No Page Comment"
 msgstr ""
 

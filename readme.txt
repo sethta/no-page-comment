@@ -4,16 +4,16 @@ Contributors: sethta
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WWP2EDSCAJR4
 Tags: admin, comments, custom post type, discussion, pages, posts, attachment, attachments, media, settings, tools, trackbacks
 Requires at least: 3.1
-Tested up to: 4.2.2
+Tested up to: 4.3
 Stable tag: trunk
 
-Disable comments by default on new pages and custom post types, while still giving you the ability to individually set them on a page or post basis.
+An interface to control the default comment and trackback settings on new posts, pages and custom post types. Becuase this only affect the default status, you still have the ability to individually control the settings on a per page or post basis.
 
 == Description ==
 
-By default, WordPress gives you two options. You can either disable comments and trackbacks by default for all pages and posts, or you can have them active by default. Unfortunately, there is no specific WordPress setting that allows comments and trackbacks to be active by default for posts, while disabling them on pages or any other post type.
+Up until recently, WordPress gave two options: You could either disable comments and trackbacks by default for all pages and posts, or you could have them active by default. In WordPress version 4.3, this finally changed so comments are always disabled on new pages.
 
-Workarounds exist by disabling comments site-wide on all pages and/or posts, but what if you actually want to have comments on a page or two? The difference between this plugin and others is that it will automatically uncheck to discussion settings boxes for you when creating a new page, while still giving you the flexibility to open comments up specifically on individual pages and post types.
+While the new change makes it easier for many of the sites, it make it harder for people who need to get the reverse and enable comments on all pages, or if they need to change the default for a custom post type. This plugin allows you to choose whether comments are enabled or disabled by default on all new posts, pages and custom post types, while still giving the ability to individually enable comments on posts or pages.
 
 Also, this plugin provides a way to quickly disable all comments or pingbacks for a specific custom post type. It directly interacts with your database to modify the status, so it is highly recommended that you backup your database first. There shouldn't be any issues using this feature, but it's always good to play it safe.
 
@@ -73,9 +73,14 @@ Of course, although *it is highly recommended that you backup your blog's databa
 
 == Screenshots ==
 
-1. The Settings page on a fresh WordPress 4.0 installation
+1. The Settings page on a fresh WordPress 4.3 installation
 
 == Changelog ==
+
+= 1.1 =
+* UPDATE: WordPress 4.3 support.
+* UPDATE: Rename settings option in database.
+* NEW: Clean up database on uninstall.
 
 = 1.0.7 =
 * NEW: Add Dutch language support.
@@ -122,6 +127,9 @@ Of course, although *it is highly recommended that you backup your blog's databa
 * NEW: Initial release.
 
 == Upgrade Notice ==
+
+= 1.1 =
+Supports new core default comment change in WordPress 4.3. Adds database cleanup on uninstall. All previous No Page Comment settings will remain intact with upgrade.
 
 = 1.0 =
 Improves plugin performance and adds ability to enable/disable all comments or trackbacks on attachment pages. All previous No Page Comment settings will remain intact with upgrade.

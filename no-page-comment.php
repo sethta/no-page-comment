@@ -3,12 +3,12 @@
 Plugin Name: No Page Comment
 Plugin URI: http://sethalling.com/plugins/no-page-comment
 Description: A plugin that uses javascript to disable comments by default on posts, pages and/or custom post types but leave them enabled on others, while still giving you the ability to individually set them on a page or post basis.
-Version: 1.0.7
+Version: 1.1
 Author: Seth Alling
 Author URI: http://sethalling.com/
 Text Domain: no-page-comment
 
-	Plugin: Copyright (c) 2011-2014 Seth Alling
+	Plugin: Copyright (c) 2011-2015 Seth Alling
 
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License
@@ -33,6 +33,11 @@ Text Domain: no-page-comment
 	Plugin developed by: http://sethalling.com    |___/       `""""`
 */
 
+// Prevent direct access
+if ( ! defined( 'ABSPATH' ) ) {
+	exit( 'This plugin requires WordPress' );
+}
+
 register_activation_hook( __FILE__, 'sta_npc_activate' );
 
 define( 'STA_NPC_WP_VERSION', version_compare( get_bloginfo( 'version' ), '3.4', '>=' ) );
@@ -54,10 +59,10 @@ if ( ! function_exists( 'sta_npc_load' ) ) {
 	function sta_npc_load() {
 		if ( ! class_exists( 'STA_NPC_Plugin' ) ) {
 			class STA_NPC_Plugin {
-				var $admin_options_name = 'sta_npc_admin_options_name',
-				    $admin_users_name   = 'sta_npc_admin_options_name',
-				    $plugin_domain      = 'no-page-comment';
-				public $plugin_name     = 'no-page-comment';
+				var $admin_options_name     = 'sta_npc_options',
+				    $admin_options_name_old = 'sta_npc_admin_options_name',
+				    $plugin_domain          = 'no-page-comment';
+				public $plugin_name         = 'no-page-comment';
 				public $plugin_file;
 				public $plugin_dir;
 				public $wp_posttypes = array(
@@ -87,6 +92,12 @@ if ( ! function_exists( 'sta_npc_load' ) ) {
 				// Returns an array of admin options
 				function sta_npc_get_admin_options() {
 
+					// Rename options from old options name
+					if ( get_option( $this->admin_options_name_old ) ) {
+						update_option( $this->admin_options_name, get_option( $this->admin_options_name_old ) );
+						delete_option( $this->admin_options_name_old );
+					}
+
 					$sta_npc_admin_options = array(
 						'disable_comments_post'   => '',
 						'disable_trackbacks_post' => '',
@@ -104,7 +115,7 @@ if ( ! function_exists( 'sta_npc_load' ) ) {
 						$sta_npc_admin_options['disable_trackbacks_' . $posttype->name] = 'true';
 					} // end foreach post types
 
-					$sta_npc_options = get_option($this->admin_options_name);
+					$sta_npc_options = get_option( $this->admin_options_name );
 					if ( ! empty( $sta_npc_options ) ) {
 
 						foreach ( $sta_npc_options as $key => $option )
@@ -166,12 +177,49 @@ if ( ! function_exists( 'sta_npc_load' ) ) {
 					<?php }
 				}
 
-				// Disable comments with hook
+				// Disable comments and trackbacks on at least WP version 4.3 with a hook
+				function wpdocs_open_comments_for_myposttype( $status, $post_type, $comment_type ) {
+					$sta_npc_options = $this->sta_npc_get_admin_options();
+
+					if ( $comment_type == 'comment' ) { // Check if comment or trackback
+
+						if ( isset( $sta_npc_options['disable_comments_' . $post_type] ) ) {
+
+							if ( $sta_npc_options['disable_comments_' . $post_type] == 'true' ) {
+								return 'closed';
+							} else {
+								return 'open';
+							}
+
+						} else {
+							return $status;
+						}
+
+					} elseif ( $comment_type == 'pingback' ) { // Double check if trackback
+
+						if ( isset( $sta_npc_options['disable_trackbacks_' . $post_type] ) ) {
+
+							if ( $sta_npc_options['disable_trackbacks_' . $post_type] == 'true' ) {
+								return 'closed';
+							} else {
+								return 'open';
+							}
+
+						} else {
+							return $status;
+						}
+
+					} else { // This should never happen, but just in case
+						return $status;
+					}
+
+				}
+
+				// Disable comments with hook on WP versions 3.4-4.2
 				function sta_no_page_comment() {
 					global $pagenow;
 					$sta_npc_options = $this->sta_npc_get_admin_options();
 					if ( ( is_admin() ) && ( $pagenow == 'post-new.php' ) ) {
-						wp_enqueue_script( 'jquery' );
 						$posttype = ( isset( $_GET['post_type'] ) ) ? $_GET['post_type'] : 'post';
 
 						if ( $sta_npc_options['disable_comments_' . $posttype] == 'true' ) {
@@ -182,12 +230,11 @@ if ( ! function_exists( 'sta_npc_load' ) ) {
 					}
 				}
 
-				// Disable trackbacks with hook
+				// Disable trackbacks with hook on versions 3.4-4.2
 				function sta_no_page_trackback() {
 					global $pagenow;
 					$sta_npc_options = $this->sta_npc_get_admin_options();
 					if ( ( is_admin() ) && ( $pagenow == 'post-new.php' ) ) {
-						wp_enqueue_script( 'jquery' );
 						$posttype = ( isset( $_GET['post_type'] ) ) ? $_GET['post_type'] : 'post';
 
 						if ( $sta_npc_options['disable_trackbacks_' . $posttype] == 'true' ) {
@@ -391,11 +438,13 @@ if ( ! function_exists( 'sta_npc_load' ) ) {
 			add_filter( 'plugin_action_links', array( &$sta_npc_plugin, 'sta_npc_settings_link' ), 10, 2 ); // Add settings link to plugins page
 			add_filter( 'admin_head', array(&$sta_npc_plugin, 'sta_discussion_options' ) ); // Change discussion options replace defaults with link to NPC settings
 
-			// Use jQuery for WordPress versions earlier than 3.4
-			if ( STA_NPC_WP_VERSION ) {
+			// Run correct function depending on version
+			if ( function_exists( 'get_default_comment_status' ) ) {
+				add_filter( 'get_default_comment_status', array(&$sta_npc_plugin, 'wpdocs_open_comments_for_myposttype' ), 10, 3 ); // Comment settings
+			} elseif ( STA_NPC_WP_VERSION ) {
 				add_filter( 'pre_option_default_comment_status', array(&$sta_npc_plugin, 'sta_no_page_comment' ) ); // Comment settings
 				add_filter( 'pre_option_default_ping_status', array(&$sta_npc_plugin, 'sta_no_page_trackback' ) ); // Trackback settings
-			} else {
+			} else { // Use jQuery for WordPress versions earlier than 3.4
 				add_action( 'admin_head', array( &$sta_npc_plugin, 'sta_no_page_comment_jquery' ) ); // Add jquery scripts
 			}
 

@@ -1,3 +1,9 @@
+<?php
+// Prevent direct access
+if ( ! defined( 'ABSPATH' ) ) {
+	exit( 'This plugin requires WordPress' );
+}
+?>
 
 <form method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>" class="wrap npc-settings">
 
@@ -123,10 +129,10 @@ if ( isset($_POST['update_sta_npc_plugin_settings']) ) {
 						<h3 style="cursor:default;"><span><?php _e('Translation Thanks:', $this->plugin_domain ); ?></span></h3>
 						<div class="inside">
 							<ul>
-								<li style="padding:5px 0;"><a href="http://www.webhostinghub.com/" title="Maria Ramos, WebHostingHub" target="_blank">Maria Ramos, WebHostingHub</a></li>
-								<li style="padding:5px 0;"><a href="http://firstsiteguide.com/" title="firstsiteguide.com" target="_blank">firstsiteguide.com</a></li>
-								<li style="padding:5px 0;"><a href="http://adevade.com/" title="Andréas Lundgren" target="_blank">Andréas Lundgren</a></li>
-								<li style="padding:5px 0;"><a href="http://www.fravaco.be/" title="Fravaco" target="_blank">Fravaco</a></li>
+								<li style="padding:5px 0;"><?php _e('Dutch and Italian:', $this->plugin_domain ); ?> <a href="http://www.fravaco.be/" title="Fravaco" target="_blank">Fravaco</a></li>
+								<li style="padding:5px 0;"><?php _e('Serbian:', $this->plugin_domain ); ?> <a href="http://firstsiteguide.com/" title="firstsiteguide.com" target="_blank">firstsiteguide.com</a></li>
+								<li style="padding:5px 0;"><?php _e('Spanish:', $this->plugin_domain ); ?> <a href="http://www.webhostinghub.com/" title="Maria Ramos, WebHostingHub" target="_blank">Maria Ramos, WebHostingHub</a></li>
+								<li style="padding:5px 0;"><?php _e('Swedish:', $this->plugin_domain ); ?> <a href="http://adevade.com/" title="Andréas Lundgren" target="_blank">Andréas Lundgren</a></li>
 							</ul>
 						</div>
 					</div>
