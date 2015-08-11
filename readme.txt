@@ -7,7 +7,7 @@ Requires at least: 3.1
 Tested up to: 4.3
 Stable tag: trunk
 
-An interface to control the default comment and trackback settings on new posts, pages and custom post types. Because this only affects the default status, you still have the ability to individually control the settings on a per page or post basis.
+An admin interface to control the default comment and trackback settings on new posts, pages and custom post types.
 
 == Description ==
 
