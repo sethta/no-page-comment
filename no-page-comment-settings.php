@@ -5,26 +5,32 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<form method="post" action="<?php echo $_SERVER['REQUEST_URI']; ?>" class="wrap npc-settings">
+<form method="post" action="<?php echo esc_url( $_SERVER['REQUEST_URI'] ); ?>" class="wrap npc-settings">
+
+<?php
+// Add nonce to prevent CSRF
+wp_nonce_field( 'sta_npc_csrf_nonce' );
+$nonce = ( isset( $_REQUEST['_wpnonce'] ) ) ? $_REQUEST['_wpnonce'] : false;
+?>
 
 <?php
 // Prints out the admin settings page
-$sta_npc_nonce = wp_create_nonce('sta_npc_nonce');
+$sta_npc_nonce = wp_create_nonce( 'sta_npc_nonce' );
 $sta_npc_options = $this->sta_npc_get_admin_options();
 
-if ( isset($_POST['update_sta_npc_plugin_settings']) ) {
+if ( wp_verify_nonce( $nonce, 'sta_npc_csrf_nonce' ) && isset( $_POST['update_sta_npc_plugin_settings'] ) ) {
 
-	foreach ( get_post_types('','objects') as $posttype ) {
+	foreach ( get_post_types( '', 'objects' ) as $posttype ) {
 		if ( in_array( $posttype->name, $this->excluded_posttypes ) )
 			continue;
 
-		if ( isset($_POST['sta_npc_disable_comments_' . $posttype->name]) ) {
+		if ( isset( $_POST['sta_npc_disable_comments_' . $posttype->name] ) ) {
 			$sta_npc_options['disable_comments_' . $posttype->name] = $_POST['sta_npc_disable_comments_' . $posttype->name];
 		} else {
 			$sta_npc_options['disable_comments_' . $posttype->name] = 'false';
 		}
 
-		if ( isset($_POST['sta_npc_disable_trackbacks_' . $posttype->name]) ) {
+		if ( isset( $_POST['sta_npc_disable_trackbacks_' . $posttype->name] ) ) {
 			$sta_npc_options['disable_trackbacks_' . $posttype->name] = $_POST['sta_npc_disable_trackbacks_' . $posttype->name];
 		} else {
 			$sta_npc_options['disable_trackbacks_' . $posttype->name] = 'false';

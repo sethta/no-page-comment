@@ -3,7 +3,7 @@
 Plugin Name: No Page Comment
 Plugin URI: http://sethalling.com/plugins/no-page-comment
 Description: An admin interface to control the default comment and trackback settings on new posts, pages and custom post types.
-Version: 1.1
+Version: 1.2
 Author: Seth Alling
 Author URI: http://sethalling.com/
 Text Domain: no-page-comment
@@ -56,9 +56,13 @@ function sta_load_text_domain() {
 add_action( 'init', 'sta_load_text_domain' ); // Set text domain for translation
 
 if ( ! function_exists( 'sta_npc_load' ) ) {
+
 	function sta_npc_load() {
+
 		if ( ! class_exists( 'STA_NPC_Plugin' ) ) {
+
 			class STA_NPC_Plugin {
+
 				var $admin_options_name     = 'sta_npc_options',
 				    $admin_options_name_old = 'sta_npc_admin_options_name',
 				    $plugin_domain          = 'no-page-comment';
@@ -72,14 +76,16 @@ if ( ! function_exists( 'sta_npc_load' ) ) {
 					'nav_menu_item',
 					'attachment'
 				);
+
 				public $excluded_posttypes = array(
 					'revision',
 					'nav_menu_item',
 				);
-				public $plugin_ver = '1.0.7';
+
+				public $plugin_ver = '1.2';
 
 				// Plugin Constructor
-				function sta_npc_plugin() {
+				function __construct() {
 					$this->plugin_dir = plugins_url( '/', __FILE__ );
 					$this->plugin_file = $this->plugin_name . '.php';
 				}
@@ -121,6 +127,7 @@ if ( ! function_exists( 'sta_npc_load' ) ) {
 						foreach ( $sta_npc_options as $key => $option )
 							$sta_npc_admin_options[$key] = $option;
 					}
+
 					update_option( $this->admin_options_name, $sta_npc_admin_options );
 					return $sta_npc_admin_options;
 				}
@@ -449,7 +456,9 @@ if ( ! function_exists( 'sta_npc_load' ) ) {
 			}
 
 		}
+
 	}
+
 }
 
 sta_npc_load();

@@ -4,7 +4,7 @@ Contributors: sethta
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WWP2EDSCAJR4
 Tags: admin, comments, custom post type, discussion, pages, posts, attachment, attachments, media, settings, tools, trackbacks
 Requires at least: 3.1
-Tested up to: 4.3
+Tested up to: 4.6
 Stable tag: trunk
 
 An admin interface to control the default comment and trackback settings on new posts, pages and custom post types.
@@ -77,6 +77,10 @@ Of course, although *it is highly recommended that you backup your blog's databa
 
 == Changelog ==
 
+= 1.2 =
+* SECURITY: Patch XSS security vulnerability.
+* UPDATE: PHP 7 support.
+
 = 1.1 =
 * UPDATE: WordPress 4.3 support.
 * UPDATE: Rename settings option in database.
@@ -127,6 +131,9 @@ Of course, although *it is highly recommended that you backup your blog's databa
 * NEW: Initial release.
 
 == Upgrade Notice ==
+
+= 1.2 =
+Security fix. Supports PHP 7. Adds database cleanup on uninstall. All previous No Page Comment settings will remain intact with upgrade.
 
 = 1.1 =
 Supports new core default comment change in WordPress 4.3. Adds database cleanup on uninstall. All previous No Page Comment settings will remain intact with upgrade.
