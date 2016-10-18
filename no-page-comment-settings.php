@@ -109,14 +109,14 @@ if ( wp_verify_nonce( $nonce, 'sta_npc_csrf_nonce' ) && isset( $_POST['update_st
 			<div id="postbox-container-1" class="postbox-container">
 				<div class="meta-box-sortables">
 
-					<div class="postbox">
+					<?php /*<div class="postbox">
 						<h3 style="cursor:default;"><span><?php _e('Other plugins by', $this->plugin_domain ); ?> <a href="http://sethalling.com/" title="Seth Alling" style="font-size:15px;">Seth Alling</a>:</span></h3>
 						<div class="inside">
 							<ul>
 								<li style="padding:5px 0;"><a href="http://sethalling.com/plugins/wordpress/wp-faqs-pro" title="WP FAQs Pro" target="_blank">WP FAQs Pro</a></li>
 							</ul>
 						</div>
-					</div>
+					</div>*/ ?>
 
 					<div class="postbox">
 						<h3 style="cursor:default;"><span><?php _e('Support No Page Comment:', $this->plugin_domain ); ?></span></h3>
