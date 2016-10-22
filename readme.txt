@@ -79,6 +79,7 @@ Of course, although *it is highly recommended that you backup your blog's databa
 
 = 1.2 =
 * SECURITY: Patch XSS security vulnerability.
+* SECURITY: Patch CSRF security vulnerability.
 * UPDATE: PHP 7 support.
 
 = 1.1 =
