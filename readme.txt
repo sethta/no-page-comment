@@ -4,7 +4,7 @@ Contributors: sethta
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WWP2EDSCAJR4
 Tags: admin, comments, custom post type, discussion, pages, posts, attachment, attachments, media, settings, tools, trackbacks
 Requires at least: 3.1
-Tested up to: 4.6.1
+Tested up to: 5.2.3
 Stable tag: trunk
 
 An admin interface to control the default comment and trackback settings on new posts, pages and custom post types.
@@ -16,8 +16,6 @@ Up until recently, WordPress gave two options: You could either disable comments
 While the new change makes it easier for many of the sites, it make it harder for people who need to get the reverse and enable comments on all pages, or if they need to change the default for a custom post type. This plugin allows you to choose whether comments are enabled or disabled by default on all new posts, pages and custom post types, while still giving the ability to individually enable comments on posts or pages.
 
 Also, this plugin provides a way to quickly disable all comments or pingbacks for a specific custom post type. It directly interacts with your database to modify the status, so it is highly recommended that you backup your database first. There shouldn't be any issues using this feature, but it's always good to play it safe.
-
-[Official No Page Comment Plugin Page](http://sethalling.com/plugins/wordpress/no-page-comment "No Page Comment WordPress Plugin")
 
 [View No Page Comment Development on Github](https://github.com/sethta/no-page-comment "No Page Comment Development on Github")
 
