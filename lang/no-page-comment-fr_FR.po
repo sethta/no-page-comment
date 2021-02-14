@@ -1,0 +1,144 @@
+# Copyright (C) 2015 No Page Comment
+# This file is distributed under the same license as the No Page Comment package.
+msgid ""
+msgstr ""
+"Project-Id-Version: No Page Comment 1.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/no-page-comment\n"
+"POT-Creation-Date: 2014-03-02 01:02:56+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: no-page-comment-settings.php:37
+msgid "Settings Updated."
+msgstr "Réglages sauvegardés"
+
+#: no-page-comment-settings.php:41 no-page-comment.php:153 no-page-comment.php:163
+msgid "No Page Comment Settings"
+msgstr "Réglages No Page Comment"
+
+#: no-page-comment-settings.php:50
+msgid "Disable comments on new:"
+msgstr "Désactiver les commentaires pour les nouveaux"
+
+#: no-page-comment-settings.php:59
+msgid "Comments"
+msgstr "Commentaires"
+
+#: no-page-comment-settings.php:61
+msgid "Trackbacks"
+msgstr "Rétroliens"
+
+#: no-page-comment-settings.php:69
+msgid "Update Settings"
+msgstr "Mettre à jour les réglages"
+
+#: no-page-comment-settings.php:76
+msgid "Modify all current:"
+msgstr "Modifier tous les actuels"
+
+#: no-page-comment-settings.php:85
+msgid "Disable All Comments"
+msgstr "Désactiver tous les commentaires"
+
+#: no-page-comment-settings.php:86
+msgid "Enable All Comments"
+msgstr "Activer tous les commentaires"
+
+#: no-page-comment-settings.php:89
+msgid "Disable All Trackbacks"
+msgstr "Désactiver tous les rétroliens"
+
+#: no-page-comment-settings.php:90
+msgid "Enable All Trackbacks"
+msgstr "Activer tous les rétroliens"
+
+#: no-page-comment-settings.php:107
+msgid "Other plugins by"
+msgstr "Autre plugins par"
+
+#: no-page-comment-settings.php:116
+msgid "Support No Page Comment:"
+msgstr "Support de No Page Comment"
+
+#: no-page-comment-settings.php:119
+msgid "Donate to support the No Page Comment plugin development"
+msgstr "Donner pour encourager le développement du plugin No Page Comment"
+
+#: no-page-comment-settings.php:119
+msgid "Donate"
+msgstr "Donner"
+
+#: no-page-comment-settings.php:120
+msgid "Write a Review about No Page Comment"
+msgstr "Ecrire un avis à propos du plugin No Page Comment"
+
+#: no-page-comment-settings.php:120
+msgid "Write a Review"
+msgstr "Ecrire un avis"
+
+#: no-page-comment-settings.php:121
+msgid "Fork No Page Comment on Github"
+msgstr "Fork No Page Comment"
+
+#: no-page-comment-settings.php:121
+msgid "Fork No Page Comment"
+msgstr ""
+
+#: no-page-comment-settings.php:122
+msgid "Report an Issue on Github"
+msgstr "Rapporter un problème via Github"
+
+#: no-page-comment-settings.php:122
+msgid "Report an Issue about No Page Comment"
+msgstr "Rapporter un problème à propos de No Page Comment"
+
+#: no-page-comment-settings.php:123
+msgid "Help Translate No Page Comment"
+msgstr "Aider à la traduction de No Page Comment"
+
+#: no-page-comment-settings.php:123
+msgid "Offer to Translate No Page Comment"
+msgstr "Proposer de traduire No Page Comment"
+
+#: no-page-comment-settings.php:129
+msgid "Translation Thanks:"
+msgstr "Traduction par"
+
+#: no-page-comment-settings.php:132
+msgid "Dutch and Italian:"
+msgstr "Néerlandais et Italien:"
+
+#: no-page-comment-settings.php:133
+msgid "Serbian:"
+msgstr "Serbe:"
+
+#: no-page-comment-settings.php:134
+msgid "Spanish:"
+msgstr "Espagnol:"
+
+#: no-page-comment-settings.php:135
+msgid "Swedish:"
+msgstr "Suédois:"
+
+#: no-page-comment.php:144
+msgid "Settings"
+msgstr "Réglages"
+
+#: no-page-comment.php:163
+msgid "Comment and trackback defaults controlled through"
+msgstr "Commentaires et rétroliens par défaut controlés par"
+
+#. Plugin Name of the plugin/theme no-page-comment.php:153
+msgid "No Page Comment"
+msgstr "No Page Comment"
+
+#. Description of the plugin/theme
+msgid ""
+"An admin interface to control the default comment and trackback settings on "
+"new posts, pages and custom post types."
+msgstr "Un écran d'administration pour contrôler les réglages par défaut des"
+"commentaires et rétroliens sur les nouveaux posts, pages, et contenus personnalisés"
