@@ -4,7 +4,8 @@ Contributors: sethta
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WWP2EDSCAJR4
 Tags: admin, comments, custom post type, discussion, pages, posts, attachment, attachments, media, settings, tools, trackbacks
 Requires at least: 3.1
-Tested up to: 5.2.3
+Tested up to: 6.0.1
+Requires PHP: 7.0
 Stable tag: trunk
 
 An admin interface to control the default comment and trackback settings on new posts, pages and custom post types.

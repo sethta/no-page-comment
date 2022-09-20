@@ -4,11 +4,13 @@ Plugin Name: No Page Comment
 Plugin URI: http://sethalling.com/plugins/no-page-comment
 Description: An admin interface to control the default comment and trackback settings on new posts, pages and custom post types.
 Version: 1.2
+Requires at least: 3.1
+Requires PHP:      7.0
 Author: Seth Alling
 Author URI: http://sethalling.com/
 Text Domain: no-page-comment
 
-	Plugin: Copyright (c) 2011-2015 Seth Alling
+	Plugin: Copyright (c) 2011-2022 Seth Alling
 
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License
