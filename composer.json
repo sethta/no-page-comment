@@ -1,0 +1,29 @@
+{
+  "name": "sethta/no-page-comment",
+  "description": "An admin interface to control the default comment and trackback settings on new posts, pages and custom post types.",
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.11",
+    "phpcsstandards/phpcsutils": "^1.0",
+    "phpcompatibility/php-compatibility": "^9.3",
+    "wp-coding-standards/wpcs": "^3.1",
+    "php-stubs/wordpress-stubs": "^6.7",
+    "phpcompatibility/phpcompatibility-wp": "^2.1"
+  },
+  "autoload": {
+    "classmap": [
+      "inc/"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "scripts": {
+    "sniff": "vendor/bin/phpcs . --extensions=php -s"
+  }
+}

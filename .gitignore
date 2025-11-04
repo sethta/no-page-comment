@@ -1,0 +1,24 @@
+# Composer files
+vendor
+
+# JS Files
+node_modules
+build
+
+# Log files
+*.log
+
+# MacOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Test files
+.phpunit.cache/
+.phpunit.result.cache
+tests/coverage/
+tests/tmp/

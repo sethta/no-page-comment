@@ -12,7 +12,7 @@ jQuery(document).ready( function($) {
 			$.ajax({
 				type : 'post',
 				dataType : 'json',
-				url : myAjax.ajaxurl,
+				url : staNpc.ajaxurl,
 				data : {
 					action: 'sta_npc_mod',
 					nonce: nonce,

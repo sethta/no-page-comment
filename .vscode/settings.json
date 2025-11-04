@@ -1,0 +1,37 @@
+{
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[jsonc]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[typescript]": {
+    "editor.tabSize": 2
+  },
+  "[typescriptreact]": {
+    "editor.tabSize": 2
+  },
+    "[php]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "valeryanm.vscode-phpsab"
+  },
+  "editor.detectIndentation": false,
+  "editor.renderWhitespace": "all",
+  "typescript.format.semicolons": "remove",
+  "javascript.format.semicolons": "remove",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "intelephense.environment.includePaths": [
+    "vendor/php-stubs/wordpress-stubs",
+    "stubs"
+  ],
+  "intelephense.format.enable": true,
+  "intelephense.files.maxSize": 7000000
+}
