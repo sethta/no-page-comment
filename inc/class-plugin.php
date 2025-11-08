@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class Plugin {
 	private static $instance = null;
-	private static $plugin_version = '1.3';
+	private static $plugin_version = '1.3.0';
 	private static $plugin_file;
 
 	public static function get_instance( $plugin_file = '' ) {

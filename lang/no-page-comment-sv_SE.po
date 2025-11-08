@@ -3,133 +3,215 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: No Page Comment 1.0.5\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tag/no-page-comment\n"
-"POT-Creation-Date: 2014-03-02 01:02:56+00:00\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/no-page-comment\n"
+"POT-Creation-Date: 2025-11-08T23:23:22+00:00\n"
 "PO-Revision-Date: 2014-08-15 13:14+0100\n"
 "Last-Translator: Andréas Lundgren <adevade@gmail.com>\n"
 "Language-Team: 035media <info@035media.se>\n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.6.7\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: sv_SE\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: no-page-comment-settings.php:31
-msgid "Settings Updated."
-msgstr "Inställningarna sparades."
-
-#: no-page-comment-settings.php:35 no-page-comment.php:152
-msgid "No Page Comment Settings"
-msgstr "Inställningar för No Page Comment"
-
-#: no-page-comment-settings.php:44
-msgid "Disable comments on new:"
-msgstr "Inaktivera kommentarer på nya:"
-
-#: no-page-comment-settings.php:53
-msgid "Comments"
-msgstr "Kommentarer"
-
-#: no-page-comment-settings.php:55
-msgid "Trackbacks"
-msgstr "Trackbacks"
-
-#: no-page-comment-settings.php:63
-msgid "Update Settings"
-msgstr "Uppdatera inställningar"
-
-#: no-page-comment-settings.php:70
-msgid "Modify all current:"
-msgstr "Redigera alla nuvarande:"
-
-#: no-page-comment-settings.php:79
-msgid "Disable All Comments"
-msgstr "Inaktivera alla kommentarer"
-
-#: no-page-comment-settings.php:80
-msgid "Enable All Comments"
-msgstr "Aktivera alla kommentarer"
-
-#: no-page-comment-settings.php:83
-msgid "Disable All Trackbacks"
-msgstr "Inaktivera alla trackbacks"
-
-#: no-page-comment-settings.php:84
-msgid "Enable All Trackbacks"
-msgstr "Aktivera alla trackbacks"
-
-#: no-page-comment-settings.php:101
-msgid "Other plugins by"
-msgstr "Andra tillägg av"
-
-#: no-page-comment-settings.php:110
-msgid "Support No Page Comment:"
-msgstr "Stöd No Page Comment"
-
-#: no-page-comment-settings.php:113
-msgid "Donate to support the No Page Comment plugin development"
-msgstr "Donera för att stödja utvecklingen av No Page Comment"
-
-#: no-page-comment-settings.php:113
-msgid "Donate"
-msgstr "Donera"
-
-#: no-page-comment-settings.php:114
-msgid "Write a Review about No Page Comment"
-msgstr "Skriv en recension om No Page Comment"
-
-#: no-page-comment-settings.php:114
-msgid "Write a Review"
-msgstr "Skriv en recension"
-
-#: no-page-comment-settings.php:115
-msgid "Fork No Page Comment on Github"
-msgstr "Fork No Page Comment på GitHub"
-
-#: no-page-comment-settings.php:115
-msgid "Fork No Page Comment"
-msgstr "Fork No Page Comment"
-
-#: no-page-comment-settings.php:116
-msgid "Report an Issue on Github"
-msgstr "Rapportera ett problem på GitHub"
-
-#: no-page-comment-settings.php:116
-msgid "Report an Issue about No Page Comment"
-msgstr "Rapportera ett problem med No Page Comment"
-
-#: no-page-comment-settings.php:117
-msgid "Help Translate No Page Comment"
-msgstr "Hjälp till att översätta No Page Comment"
-
-#: no-page-comment-settings.php:117
-msgid "Offer to Translate No Page Comment"
-msgstr "Översätt No Page Comment"
-
-#: no-page-comment-settings.php:123
-msgid "Translation Thanks:"
-msgstr "Översättningar av:"
-
-#: no-page-comment.php:133
-msgid "Settings"
-msgstr "Inställningar"
-
-#: no-page-comment.php:152
-msgid "Comment and trackback defaults controlled through"
-msgstr "Standardinställningar för kommentarer och trackbacks kontrolleras av"
-
-#. Plugin Name of the plugin/theme
+#. Plugin Name of the plugin
+#: no-page-comment.php inc/class-settings.php:74
 msgid "No Page Comment"
 msgstr "No Page Comment"
 
-#. Description of the plugin/theme
+#. Description of the plugin
+#: no-page-comment.php
 msgid ""
-"A plugin that uses javascript to disable comments by default on posts, pages "
-"and/or custom post types but leave them enabled on others, while still "
-"giving you the ability to individually set them on a page or post basis."
+"An admin interface to control the default comment and trackback settings on "
+"new posts, pages and custom post types."
 msgstr ""
-"Ett tillägg som använder JavaScript för att inaktivera kommentarer på "
-"inlägg, sidor och/eller egna inläggstyper men lämnar dem aktiverade på "
-"andra. "
+
+#. Author of the plugin
+#: no-page-comment.php
+msgid "Seth Alling"
+msgstr ""
+
+#. Author URI of the plugin
+#: no-page-comment.php
+msgid "https://sethalling.com/"
+msgstr ""
+
+#: inc/class-notification.php:106
+msgid "View"
+msgstr ""
+
+#: inc/class-notification.php:109
+msgid "Install"
+msgstr ""
+
+#: inc/class-notification.php:115
+msgid "Help your pages load faster for readers with Easy Critical CSS."
+msgstr ""
+
+#: inc/class-notification.php:117
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/class-notification.php:127
+msgid "Insufficient permissions"
+msgstr ""
+
+#: inc/class-settings-view.php:36
+msgid "Settings Updated."
+msgstr "Inställningarna sparades."
+
+#: inc/class-settings-view.php:48 inc/class-settings.php:73
+#: inc/class-settings.php:114
+msgid "No Page Comment Settings"
+msgstr "Inställningar för No Page Comment"
+
+#: inc/class-settings-view.php:57
+msgid "Checked boxes will disable comments or trackbacks on new:"
+msgstr ""
+
+#: inc/class-settings-view.php:75
+msgid "Comments"
+msgstr "Kommentarer"
+
+#: inc/class-settings-view.php:77
+msgid "Trackbacks"
+msgstr "Trackbacks"
+
+#: inc/class-settings-view.php:85
+#, fuzzy
+msgctxt "button"
+msgid "Update Settings"
+msgstr "Uppdatera inställningar"
+
+#: inc/class-settings-view.php:92
+msgid "Modify all current:"
+msgstr "Redigera alla nuvarande:"
+
+#: inc/class-settings-view.php:104
+msgid "Disable All Comments"
+msgstr "Inaktivera alla kommentarer"
+
+#: inc/class-settings-view.php:105
+msgid "Enable All Comments"
+msgstr "Aktivera alla kommentarer"
+
+#: inc/class-settings-view.php:108
+msgid "Disable All Trackbacks"
+msgstr "Inaktivera alla trackbacks"
+
+#: inc/class-settings-view.php:109
+msgid "Enable All Trackbacks"
+msgstr "Aktivera alla trackbacks"
+
+#: inc/class-settings-view.php:126
+msgid "Support No Page Comment:"
+msgstr "Stöd No Page Comment"
+
+#: inc/class-settings-view.php:129
+msgid "Donate to support the No Page Comment plugin development"
+msgstr "Donera för att stödja utvecklingen av No Page Comment"
+
+#: inc/class-settings-view.php:129
+msgid "Donate"
+msgstr "Donera"
+
+#: inc/class-settings-view.php:130
+msgid "Write a Review about No Page Comment"
+msgstr "Skriv en recension om No Page Comment"
+
+#: inc/class-settings-view.php:130
+msgid "Write a Review"
+msgstr "Skriv en recension"
+
+#: inc/class-settings-view.php:131
+msgid "Fork No Page Comment on Github"
+msgstr "Fork No Page Comment på GitHub"
+
+#: inc/class-settings-view.php:131
+msgid "Fork No Page Comment"
+msgstr "Fork No Page Comment"
+
+#: inc/class-settings-view.php:132
+msgid "Report an Issue on Github"
+msgstr "Rapportera ett problem på GitHub"
+
+#: inc/class-settings-view.php:132
+msgid "Report an Issue about No Page Comment"
+msgstr "Rapportera ett problem med No Page Comment"
+
+#: inc/class-settings-view.php:138
+msgid "Translation Thanks:"
+msgstr "Översättningar av:"
+
+#: inc/class-settings-view.php:141
+msgid "Dutch and Italian:"
+msgstr ""
+
+#: inc/class-settings-view.php:142
+msgid "French:"
+msgstr ""
+
+#: inc/class-settings-view.php:143
+msgid "Serbian:"
+msgstr ""
+
+#: inc/class-settings-view.php:144
+msgid "Spanish:"
+msgstr ""
+
+#: inc/class-settings-view.php:145
+msgid "Swedish:"
+msgstr ""
+
+#: inc/class-settings.php:66
+msgid "Settings"
+msgstr "Inställningar"
+
+#: inc/class-settings.php:112
+msgid "Comment and trackback defaults controlled through"
+msgstr "Standardinställningar för kommentarer och trackbacks kontrolleras av"
+
+#: inc/class-settings.php:142 inc/class-settings.php:145
+msgid "You don't have permission to perform this action."
+msgstr ""
+
+#: inc/class-settings.php:162
+msgid "Invalid comment status."
+msgstr ""
+
+#: inc/class-settings.php:183
+msgid "Invalid comment type."
+msgstr ""
+
+#: inc/class-settings.php:189
+msgid "Something went wrong. Please refresh this page and try again."
+msgstr ""
+
+#. translators: 1: comment label, 2: post type label, 3: new status.
+#: inc/class-settings.php:196
+msgid "All %1$s of %2$s have been marked as %3$s."
+msgstr ""
+
+#~ msgid "Disable comments on new:"
+#~ msgstr "Inaktivera kommentarer på nya:"
+
+#~ msgid "Other plugins by"
+#~ msgstr "Andra tillägg av"
+
+#~ msgid "Help Translate No Page Comment"
+#~ msgstr "Hjälp till att översätta No Page Comment"
+
+#~ msgid "Offer to Translate No Page Comment"
+#~ msgstr "Översätt No Page Comment"
+
+#~ msgid ""
+#~ "A plugin that uses javascript to disable comments by default on posts, "
+#~ "pages and/or custom post types but leave them enabled on others, while "
+#~ "still giving you the ability to individually set them on a page or post "
+#~ "basis."
+#~ msgstr ""
+#~ "Ett tillägg som använder JavaScript för att inaktivera kommentarer på "
+#~ "inlägg, sidor och/eller egna inläggstyper men lämnar dem aktiverade på "
+#~ "andra. "

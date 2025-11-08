@@ -139,6 +139,7 @@ class Settings_View {
 								<div class="inside">
 									<ul>
 										<li style="padding:5px 0;"><?php echo esc_html__( 'Dutch and Italian:', 'no-page-comment' ); ?> Fravaco</li>
+										<li style="padding:5px 0;"><?php echo esc_html__( 'French:', 'no-page-comment' ); ?> littlevache</li>
 										<li style="padding:5px 0;"><?php echo esc_html__( 'Serbian:', 'no-page-comment' ); ?> firstsiteguide.com</li>
 										<li style="padding:5px 0;"><?php echo esc_html__( 'Spanish:', 'no-page-comment' ); ?> Maria Ramos, WebHostingHub</li>
 										<li style="padding:5px 0;"><?php echo esc_html__( 'Swedish:', 'no-page-comment' ); ?> Andréas Lundgren</li>
