@@ -103,6 +103,7 @@ class Plugin {
 			return;
 		}
 
+		Notification::init();
 		Settings::init();
 
 		$this->ensure_version_consistency();
