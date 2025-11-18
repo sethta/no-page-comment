@@ -2,11 +2,13 @@
 
 Contributors: sethta
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5WWP2EDSCAJR4
-Tags: admin, comments, custom post type, discussion, pages, posts, attachment, attachments, media, settings, tools, trackbacks
+Tags: comments, discussion, custom post types, pages, posts
 Requires at least: 6.2
 Tested up to: 6.8.2
 Requires PHP: 7.4
 Stable tag: trunk
+License:           GPLv2 or later
+License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
 An admin interface to control the default comment and trackback settings on new posts, pages and custom post types.
 
@@ -76,6 +78,9 @@ Of course, although *it is highly recommended that you backup your blog's databa
 
 == Changelog ==
 
+= 1.3.1 =
+* FIX: Fix bug where notification dismiss button wasn't working.
+
 = 1.3.0 =
 * OPTIMIZATION: Convert to class-based architecture and move code into namespaced classes.
 * OPTIMIZATION: Apply WPCS/PHPCS fixes and improve code cleanliness.
@@ -136,6 +141,9 @@ Of course, although *it is highly recommended that you backup your blog's databa
 * NEW: Initial release.
 
 == Upgrade Notice ==
+
+= 1.3.1 =
+This update contains a bug fix.
 
 = 1.3.0 =
 Refactor to class-based architecture, security hardening, code style and standards improvements, and uninstall cleanup. No user-visible settings were removed; existing settings are preserved during upgrade.

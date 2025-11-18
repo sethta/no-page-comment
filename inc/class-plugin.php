@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 class Plugin {
 	private static $instance = null;
-	private static $plugin_version = '1.3.0';
+	private static $plugin_version = '1.3.1';
 	private static $plugin_file;
 
 	public static function get_instance( $plugin_file = '' ) {
@@ -37,6 +37,10 @@ class Plugin {
 	 */
 	public function ensure_version_consistency() {
 		$stored_plugin_version = get_option( 'sta_npc_version' );
+
+		if ( $stored_plugin_version === '1.3.0' ) {
+			update_option( 'sta_npc_ecc_notif', time() );
+		}
 
 		if ( $stored_plugin_version !== self::$plugin_version ) {
 			update_option( 'sta_npc_version', self::$plugin_version );

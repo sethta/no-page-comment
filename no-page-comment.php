@@ -2,7 +2,7 @@
 /*
  * Plugin Name:       No Page Comment
  * Description:       An admin interface to control the default comment and trackback settings on new posts, pages and custom post types.
- * Version:           1.3.0
+ * Version:           1.3.1
  * Requires at least: 6.2
  * Tested up to:      6.8.2
  * Requires PHP:      7.4

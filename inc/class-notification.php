@@ -79,8 +79,8 @@ class Notification {
 			return;
 		}
 
-		$notif_dismissed_time = get_option( 'sta_npc_ecc_notif', 0 );
-		if ( $notif_dismissed_time && time() - (int) $notif_dismissed_time < ( 120 * DAY_IN_SECONDS ) ) {
+		$notif_dismissed = get_option( 'sta_npc_ecc_notif', 0 );
+		if ( $notif_dismissed ) {
 			return;
 		}
 
@@ -101,7 +101,7 @@ class Notification {
 			return;
 		}
 
-		wp_enqueue_script( 'sta-npc-notice' );
+		wp_enqueue_script( 'sta-npc' );
 		$install_url = admin_url( 'plugin-install.php?s=criticalcss&tab=search&type=author' );
 		$button_text = __( 'View', 'no-page-comment' );
 		if ( current_user_can( 'install_plugins' ) ) {

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the No Page Comment plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: No Page Comment 1.3.0\n"
+"Project-Id-Version: No Page Comment 1.3.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/no-page-comment\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
